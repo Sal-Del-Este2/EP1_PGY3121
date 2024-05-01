@@ -1,5 +1,5 @@
 /*colores para los textos, !important es para forzar el uso*/
-.txt-plomo{color: rgb(117, 117, 117)}
+.txt-plomo{color: rgb(83, 82, 82)}
 .txt-celeste{color: rgb(170, 215, 245)}
 .txt-verde{color: rgb(167, 243, 69)}
 .txt-naranja{color: rgb(247, 175, 41)}
@@ -10,7 +10,7 @@
 .txt-negro{color: rgb(0, 0, 0)}
 
 /*colores para los background*/
-.bg-plomo{background-color: rgb(117, 117, 117)}
+.bg-plomo{background-color: rgb(196, 196, 196)}
 .bg-celeste{background-color: rgb(170, 215, 245)}
 .bg-verde{background-color: rgb(167, 243, 69)}
 .bg-naranja{background-color: rgb(247, 175, 41)}
@@ -19,7 +19,7 @@
 .bg-negro{background-color: rgb(0, 0, 0)}
 .bg-azul{background-color: rgb(16, 0, 85)}
 .bg-negro{background-color: rgb(0, 0, 0)}
-.bg-silver{background-color: rgba(179, 179, 179, 0.163)}
+.bg-silver{background-color: rgba(196, 196, 196, 0.63)}
 
 /*colores para los botones, "hover" es para atenuar*/
 .btn-morado{background-color: rgb(203, 133, 243)}
@@ -47,11 +47,12 @@
 .t800{ font-weight: 800;}
 .t900{ font-weight: 900;}
 
-.fondo{
-  font-family: 'nunito Sans', sans-serif;
-  background-image: url(/img/fondo.jpg);
-  background-repeat: no-repeat; background-size: cover;
-  background-position: center; background-attachment: fixed; 
+body{
+  background-color: rgb(218, 218, 218);
+}
+
+.centrar {
+  text-align: center;
 }
 .tam01{font-size: 1.3rem;}/*usar "rem" para que se adapte el tamaño de la pagina y no sea absoluto como el PX*/
 .centrar{display: flex; justify-content: center; align-items: center;}/* para centrar */
