@@ -32,7 +32,7 @@
         <header>
                 
             <nav class="navbar navbar-expand-lg bg-body-tertiary"> <!-- inicio barra superior-->
-                <div class="container-fluid bg-negro">
+                <div class="container-fluid bg-plomo">
                     <a href="index.html"> <img src="img\logo.png" width="60"> </a> <!--imagen que me dirige al inicio-->
                     <p class="txt-plomo t700 px-1"> Taller Mecánico <br><span class="text-uppercase txt-plomo t400 px-1"> Rayo Makween</span> </p>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,46 +40,44 @@
                     </button>
         
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-0 mb-lg-0"> <!-- inicio menus -->
+                        <ul class="navbar-nav me-auto mb-0 mb-lg-0 txt-plomo"> <!-- inicio menus -->
                             <li class="nav-item">
                                 <a class="nav-link txt-plomo" href="index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link txt-plomo" href="quienes-somos.html">Sobre Nosoros</a>
+                                <a class="nav-link" href="quienes-somos.html">Sobre Nosoros</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link txt-plomo" href="servicios.html">Servicios</a>
-                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="servicios.html">Servicios</a>
+                            </li> -->
                             <li class="nav-item dropdown">
-                                <a class="nav-link txt-plomo dropdown-toggle" href="autoayuda.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Auto ayuda</a>
+                                <!-- <a class="nav-link dropdown-toggle" href="autoayuda.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Auto ayuda</a>-->
                                 <ul class="dropdown-menu bg-silver">
-                                    <li><a class="dropdown-item txt-plomo" href="carroseria.html">Carroseria</a></li>
-                                    <li><a class="dropdown-item txt-plomo" href="electricidad.html">Electricidad</a></li>
-                                    <li><a class="dropdown-item txt-plomo" href="gases.html">Gases</a></li>
-                                    <li><a class="dropdown-item txt-plomo" href="cajaCambio.html">Caja de Cambio</a></li>
+                                    <li><a class="dropdown-item" href="carroseria.html">Carroseria</a></li>
+                                    <li><a class="dropdown-item" href="electricidad.html">Electricidad</a></li>
+                                    <li><a class="dropdown-item" href="gases.html">Gases</a></li>
+                                    <li><a class="dropdown-item" href="cajaCambio.html">Caja de Cambio</a></li>
                                 </ul>
                             </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="galeria.html">Galería</a>
+                            </li> -->
                             <li class="nav-item">
-                                <a class="nav-link txt-plomo" href="galeria.html">Galería</a>
+                                <a class="nav-link" href="contacto.html">Contacto</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link txt-plomo" href="contacto.html">Contacto</a>
+                                <a class="nav-link" href="registro.html">Registrarse</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link txt-plomo" href="registro.html">Registrarse</a>
+                            <li>
+                                <a class="nav-link" href="login.html">Ingreso</a>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a class="nav-link txt-plomo" href="agendar.html">Agendar</a>
-                            </li>                                
+                            </li> -->
                         </ul> <!-- fin menus -->
-        
-                        <form class="d-flex" role="search"> <!-- inicio sector de busqueda -->
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-secondary" type="submit">busqueda</button>
-                        </form> <!-- fin sector de busqueda -->
                     </div>
                 </div>
-            </nav> <!-- ifin barra superior-->
+            </nav> <!-- fin barra superior-->
 
             <div class="titulo-seccion-pag pt-5 txt-blanco">
                 <div class="container text-center text-capitalize">
@@ -106,7 +104,7 @@
                                     <div class="mb-3">
                                         <label for="nombre" class="form-label titulos-form">Nombre</label>
                                         <!-- para ingresar el nombres-->
-                                        <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="nombre-ayuda">
+                                        <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="nombre-ayuda" required>
                                         <div id="nombre-ayuda" class="form-text"></div>
                                     </div>
                                 </div>
@@ -114,7 +112,7 @@
                                     <div class="mb-3">
                                         <label for="apellido" class="form-label titulos-form">Apellidos</label>
                                         <!-- para ingresar el apellido-->
-                                        <input type="text" class="form-control" id="apellido" name="Apellido" aria-describedby="nombre-ayuda">
+                                        <input type="text" class="form-control" id="apellido" name="Apellido" aria-describedby="nombre-ayuda" required>
                                         <div id="nombre-ayuda" class="form-text"></div>
                                     </div>
                                 </div>
@@ -122,7 +120,7 @@
                                     <div class="mb-3">
                                         <label for="telefono" class="form-label titulos-form">Teléfono</label>
                                         <!-- para ingresar el fono-->
-                                        <input type="text" class="form-control" id="telefono" name="telefono" aria-describedby="nombre-ayuda">
+                                        <input type="text" class="form-control" id="telefono" name="telefono" aria-describedby="nombre-ayuda" required>
                                         <div id="nombre-ayuda" class="form-text"></div>
                                     </div>
                                 </div>
@@ -130,8 +128,8 @@
                                     <div class="mb-3">
                                         <label for="correo" class="form-label titulos-form">Correo electrónico</label>
                                         <!-- para ingresar el correo-->
-                                        <input type="email" class="form-control" id="correo" name="correo" aria-describedby="emailHelp">
-                                        <div id="emailHelp" class="form-text txt-amarillo">Nos contactaremos directamente en este correo
+                                        <input type="email" class="form-control" id="correo" name="correo" aria-describedby="emailHelp" required>
+                                        <div id="emailHelp" class="form-text">Nos contactaremos directamente en este correo
                                         </div>
                                     </div>
                                 </div>
@@ -140,7 +138,7 @@
                                 <div class="col-lg-6 col-md-6 g-0">
                                     <div class="mb-3 g-0">
                                         <label for="" class="form-label titulos-form">Motivo de contacto</label>
-                                        <select class="form-select form-select-lg" name="motivo-contacto" id="">
+                                        <select class="form-select form-select-lg f15" name="motivo-contacto" id="">
                                             <option selected>Seleccionar</option>
                                             <option value="donaciones">preguntas</option>
                                             <option value="transparencia">Sugerencias</option>
@@ -155,8 +153,8 @@
                                 <textarea class="titulos-form" name="comentarios" id="comentarios" cols="30" rows="8"></textarea>
                                 <div class="col-lg-6 col-md-6 pt-2">
                                     <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label link-mora" name="ok" for="exampleCheck1">Acepto los   <a class="text-decoration-none txt-amarillo2" href="terminoYCondiciones.html">términos y condiciones</a></label>
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                                        <label class="form-check-label link-mora" name="ok" for="exampleCheck1"><a class="text-decoration-none " href="terminoYCondiciones.html">Acepto los términos y condiciones</a></label>
                                     </div>
                                 </div>
                                 <button type="submit" class="btn btn-primary bg-morado">Enviar</button>
@@ -168,35 +166,29 @@
                 </div>
             </div>
 
-            <!--inicio barra inferiro-->
-            <div class="downbar bg-negro py-1">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 t700">
-                            <ul class="nav justify-content-center"> <!--centrer, para centrar los 3 iconos-->
-                                <!-- 1. se agrega "fa " para que carge los iconos-->
-                                <!-- 2. el px-2 es para que no estan juntos-->
-                                <li class="txt-blanco">Visitanos/Siguenos</li>
-                                <li><a class="text-decoration-none txt-blanco" href="https://www.facebook.com/?locale=es_LA"><i class="fa fa-brands fa-facebook px-2"></i></a></li>
-                                <li><a class="text-decoration-none txt-blanco" href="https://www.instagram.com/"><i class="fa fa-brands fa-instagram px-2"></i></a></li>
-                                <li><a class="text-decoration-none txt-blanco" href="https://twitter.com/?lang=es"><i class="fa fa-brands fa-twitter px-2"></i></a></li>
-                            </ul><!-- fin lista-->
-                        </div>
-                    </div><!-- fin row-->
-                </div><!-- fin container-->
-            </div><!-- fin barra superior -->
         </header>
         <!--main></main-->
-        <footer class="footer text-center txt-amarillo"><!-- Pie de la pagina -->
+        <footer class="footer text-center"><!-- Pie de la pagina -->
             <div class="copyright">
                 <div class="container">
                     <hr>
                     <div class="row">
-                        <div class="col-lg-12 col-md-12">
-                            <p><b><a href="index.html"> <img src="img\logo.png" width="50"></a> | 2024 | Mecanica | Taller mecanico Rayo Makween |   <a class="text-decoration-none txt-amarillo2" href="login.html">Ingreso personal</a></b></p>
+                        <div class="col-lg-6 col-md-6 txt-negro">
+                            <p><b><a href="index.html"> <img src="img\logo1.png" width="50"></a> | 2024 | Mecanica | Taller mecanico Rayo Makween |</b></p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 t700">
+                            <ul class="nav justify-content-center"> <!--centrer, para centrar los 3 iconos-->
+                                <!-- 1. se agrega "fa " para que carge los iconos-->
+                                <!-- 2. el px-2 es para que no estan juntos-->
+                                <li class="txt-plomo ">Visitanos/Siguenos</li>
+                                <li><a class="text-decoration-none txt-plomo" href="https://www.facebook.com/?locale=es_LA"><i class="fa fa-brands fa-facebook px-2"></i></a></li>
+                                <li><a class="text-decoration-none txt-plomo" href="https://www.instagram.com/"><i class="fa fa-brands fa-instagram px-2"></i></a></li>
+                                <li><a class="text-decoration-none txt-plomo" href="https://twitter.com/?lang=es"><i class="fa fa-brands fa-twitter px-2"></i></a></li>
+                            </ul><!-- fin lista-->
                         </div>
                     </div>
                 </div>
+            </div>
         </footer><!-- Fin Pie de la pagina -->
         <!-- Bootstrap JavaScript Libraries -->
         <script

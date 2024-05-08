@@ -46,9 +46,29 @@
 .t700{ font-weight: 700;}
 .t800{ font-weight: 800;}
 .t900{ font-weight: 900;}
+/*tamaño fuente*/
+.f5{ font-size: 5px;}
+.f10{ font-size: 10px;}
+.f15{ font-size: 15px;}
+.f20{ font-size: 20px;}
+.f25{ font-size: 25px;}
 
 body{
   background-color: rgb(218, 218, 218);
+}
+.cuerpo{
+  background-color: rgb(218, 218, 218);
+  margin: 0;
+  padding: 0;
+  height: 90vh;
+  overflow: hidden;
+}
+.barraInf{
+position: relative;
+  margin: 0;
+  padding: 0;
+  height: 90;
+  overflow: hidden;
 }
 
 .centrar {
