@@ -1,3 +1,12 @@
+<!-- apara no tener inconveniente debe agregar las siguientes extenciones:
+1. bootstrap 5 Icon snipets de joshua
+2. bootstrap 5 snippets de shariar
+3. bootstrap 4, font awesome 4... de ashok
+4. bootstrap 5 Quick snippets de Anbuselvan
+5. font Awesome de Thinker
+6. Font Awesome gallery de Tomaasvergara
+7. Live server-->
+
 <!doctype html>
 <html lang="en">
     <head>
@@ -9,8 +18,8 @@
         <!-- Bootstrap CSS v5.2.1 -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"
+        />
         <link rel="stylesheet" href="css/style.css"> <!--css local-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- 3 lineas siguientes es para que carge las fuente de google fonts-->
@@ -22,44 +31,56 @@
     <body class="fondo">
         <header>
                     
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid bg-plomo">
-                    <img src="img/logo.png" width="60" onclick="navigateTo('index.html')" style="cursor: pointer;">
-                    <p class="txt-plomo t700 px-1">Taller Mecánico <br><span class="text-uppercase txt-plomo t400 px-1">Rayo Makween</span></p>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary"> <!-- inicio barra superior-->
+                <div class="container-fluid bg-negro">
+                    <a href="index.html"> <img src="img\logo.png" width="60"> </a> <!--imagen que me dirige al inicio-->
+                    <p class="txt-plomo t700 px-1"> Taller Mecánico <br><span class="text-uppercase txt-plomo t400 px-1"> Rayo Makween</span> </p>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+        
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-0 mb-lg-0 txt-plomo">
+                        <ul class="navbar-nav me-auto mb-0 mb-lg-0"> <!-- inicio menus -->
                             <li class="nav-item">
-                                <span class="nav-link txt-plomo" onclick="navigateTo('index.html')">Inicio</span>
+                                <a class="nav-link txt-plomo" href="index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <span class="nav-link" onclick="navigateTo('quienes-somos.html')">Sobre Nosotros</span>
+                                <a class="nav-link txt-plomo" href="quienes-somos.html">Sobre Nosoros</a>
                             </li>
                             <li class="nav-item">
-                                <span class="nav-link" onclick="navigateTo('contacto.html')">Contacto</span>
+                                <a class="nav-link txt-plomo" href="servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link txt-plomo dropdown-toggle" href="autoayuda.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Auto ayuda</a>
+                                <ul class="dropdown-menu bg-silver">
+                                    <li><a class="dropdown-item txt-plomo" href="carroseria.html">Carroseria</a></li>
+                                    <li><a class="dropdown-item txt-plomo" href="electricidad.html">Electricidad</a></li>
+                                    <li><a class="dropdown-item txt-plomo" href="gases.html">Gases</a></li>
+                                    <li><a class="dropdown-item txt-plomo" href="cajaCambio.html">Caja de Cambio</a></li>
+                                </ul>
                             </li>
                             <li class="nav-item">
-                                <span class="nav-link" onclick="navigateTo('registro.html')">Registrarse</span>
+                                <a class="nav-link txt-plomo" href="galeria.html">Galería</a>
                             </li>
                             <li class="nav-item">
-                                <span class="nav-link" onclick="navigateTo('login.html')">Ingreso</span>
+                                <a class="nav-link txt-plomo" href="contacto.html">Contacto</a>
                             </li>
-                        </ul>
-                        <form id="searchForm" class="d-flex" role="search">
-                            <!-- inicio sector de busqueda -->
-                            <input id="searchInput" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                            <button class="btn btn-outline-secondary" type="submit">Buscar</button>
-                            <script defer src="busqueda.js"></script>
+                            <li class="nav-item">
+                                <a class="nav-link txt-plomo" href="registro.html">Registrarse</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link txt-plomo" href="agendar.html">Agendar</a>
+                            </li>                                
+                        </ul> <!-- fin menus -->
+        
+                        <form class="d-flex" role="search"> <!-- inicio sector de busqueda -->
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-secondary" type="submit">Search</button>
                         </form> <!-- fin sector de busqueda -->
                     </div>
                 </div>
-            </nav>
-            <script defer src="main.js"></script>
-        </header>
-
-        <main>
+            </nav> <!-- ifin barra superior-->
+        
             <div class="#">
                 <div class="#">
                     <div class="carroceria py-4">
@@ -68,7 +89,7 @@
                                 <div class="col-lg-8 col-md-8">
                                     <h3 class="t700 display-5 txt-naranja text-center">Gases</h3>
                                     <p class="t600 display-5 txt-naranja text-center">Galería</p>
-                                    <p class="txt-justificado txt-plomo">Darle un mantenimiento adecuado al sistema de gases de escape no
+                                    <p class="txt-justificado txt-amarillo">Darle un mantenimiento adecuado al sistema de gases de escape no
                                         solo mejorará el rendimiento de tu vehículo, sino también la eficiencia y la calidad
                                         del aire que respiramos. ¡Dale a tu auto el cuidado necesario para reducir las emisiones
                                         y conducir con tranquilidad en la carretera!</p>
@@ -77,7 +98,7 @@
                         </div>
                     </div>
                         
-                    <div class="gases txt-plomo">
+                    <div class="gases txt-amarillo">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-3 col-md-3 text-center separa-hori-lg separa-verti">
@@ -119,8 +140,9 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8 col-md-8">
+                                    <h3 class="t700 display-5 txt-naranja text-center">Gases</h3>
                                     <p class="t600 display-5 txt-naranja text-center">Auto ayuda</p>
-                                    <p class="txt-justificado txt-plomo">Explora videos de autoayuda especializados en técnicas de diagnóstico
+                                    <p class="txt-justificado txt-amarillo">Explora videos de autoayuda especializados en técnicas de diagnóstico
                                         y reparación de emisiones de escape y gases vehiculares. Aprende cómo identificar y
                                         solucionar problemas relacionados con los gases de escape de tu vehículo por ti mismo.
                                         ¡Empodérate con conocimientos prácticos para mantener y mejorar el sistema de escape de tu auto!</p>
@@ -128,7 +150,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="gases txt-plomo">
+                    <div class="gases txt-amarillo">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-3 col-md-3 text-center  bordes separa-hori-lg separa-verti">
@@ -148,38 +170,47 @@
                     </div>
                 </div>
             </div>
-        </main>
 
-        <footer class="footer text-center">
+            <!--inicio barra inferiro-->
+            <div class="downbar bg-negro py-1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 t700">
+                            <ul class="nav justify-content-center"> <!--centrer, para centrar los 3 iconos-->
+                                <!-- 1. se agrega "fa " para que carge los iconos-->
+                                <!-- 2. el px-2 es para que no estan juntos-->
+                                <li class="txt-blanco">Visitanos/Siguenos</li>
+                                <li><a class="text-decoration-none txt-blanco" href="https://www.facebook.com/?locale=es_LA"><i class="fa fa-brands fa-facebook px-2"></i></a></li>
+                                <li><a class="text-decoration-none txt-blanco" href="https://www.instagram.com/"><i class="fa fa-brands fa-instagram px-2"></i></a></li>
+                                <li><a class="text-decoration-none txt-blanco" href="https://twitter.com/?lang=es"><i class="fa fa-brands fa-twitter px-2"></i></a></li>
+                            </ul><!-- fin lista-->
+                        </div>
+                    </div><!-- fin row-->
+                </div><!-- fin container-->
+            </div><!-- fin barra superior -->
+        </header>
+        <!--main></main-->
+        <footer class="footer text-center txt-amarillo"><!-- Pie de la pagina -->
             <div class="copyright">
                 <div class="container">
                     <hr>
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 txt-negro">
-                            <p><b><a href="index.html"> <img src="img\logo1.png" width="50"></a> | 2024 | Mecanica | Taller mecanico Rayo Makween |</b></p>
-                        </div>
-                        <div class="col-lg-6 col-md-6 t700">
-                            <ul class="nav justify-content-center"> <!--centrer, para centrar los 3 iconos-->
-                                <!-- 1. se agrega "fa " para que carge los iconos-->
-                                <!-- 2. el px-2 es para que no estan juntos-->
-                                <li class="txt-plomo ">Visitanos/Siguenos</li>
-                                <li><a class="text-decoration-none txt-plomo" href="https://www.facebook.com/?locale=es_LA"><i class="fa fa-brands fa-facebook px-2"></i></a></li>
-                                <li><a class="text-decoration-none txt-plomo" href="https://www.instagram.com/"><i class="fa fa-brands fa-instagram px-2"></i></a></li>
-                                <li><a class="text-decoration-none txt-plomo" href="https://twitter.com/?lang=es"><i class="fa fa-brands fa-twitter px-2"></i></a></li>
-                            </ul>
+                        <div class="col-lg-12 col-md-12">
+                            <p><b><a href="index.html"> <img src="img\logo.png" width="50"></a> | 2024 | Mecanica | Taller mecanico Rayo Makween |   <a class="text-decoration-none txt-amarillo2" href="login.html">Ingreso personal</a></b></p>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
-
-        <!-- jquery-->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        </footer><!-- Fin Pie de la pagina -->
+        <!-- Bootstrap JavaScript Libraries -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"
+        ></script>
+        
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"
+        ></script>
     </body>
 </html>
