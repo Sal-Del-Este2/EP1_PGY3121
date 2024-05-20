@@ -31,56 +31,44 @@
     <body class="fondo">
         <header>
                 
-            <nav class="navbar navbar-expand-lg bg-body-tertiary"> <!-- inicio barra superior-->
-                <div class="container-fluid bg-negro">
-                    <a href="index.html"> <img src="img\logo.png" width="60"> </a> <!--imagen que me dirige al inicio-->
-                    <p class="txt-plomo t700 px-1"> Taller Mecánico <br><span class="text-uppercase txt-plomo t400 px-1"> Rayo Makween</span> </p>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid bg-plomo">
+                    <img src="img/logo.png" width="60" onclick="navigateTo('index.html')" style="cursor: pointer;">
+                    <p class="txt-plomo t700 px-1">Taller Mecánico <br><span class="text-uppercase txt-plomo t400 px-1">Rayo Makween</span></p>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-        
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-0 mb-lg-0"> <!-- inicio menus -->
+                        <ul class="navbar-nav me-auto mb-0 mb-lg-0 txt-plomo">
                             <li class="nav-item">
-                                <a class="nav-link txt-plomo" href="index.html">Inicio</a>
+                                <span class="nav-link txt-plomo" onclick="navigateTo('index.html')">Inicio</span>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link txt-plomo" href="quienes-somos.html">Sobre Nosoros</a>
+                                <span class="nav-link" onclick="navigateTo('quienes-somos.html')">Sobre Nosotros</span>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link txt-plomo" href="servicios.html">Servicios</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link txt-plomo dropdown-toggle" href="autoayuda.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Auto ayuda</a>
-                                <ul class="dropdown-menu bg-silver">
-                                    <li><a class="dropdown-item txt-plomo" href="carroseria.html">Carroseria</a></li>
-                                    <li><a class="dropdown-item txt-plomo" href="electricidad.html">Electricidad</a></li>
-                                    <li><a class="dropdown-item txt-plomo" href="gases.html">Gases</a></li>
-                                    <li><a class="dropdown-item txt-plomo" href="cajaCambio.html">Caja de Cambio</a></li>
-                                </ul>
+                                <span class="nav-link" onclick="navigateTo('contacto.html')">Contacto</span>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link txt-plomo" href="galeria.html">Galería</a>
+                                <span class="nav-link" onclick="navigateTo('registro.html')">Registrarse</span>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link txt-plomo" href="contacto.html">Contacto</a>
+                                <span class="nav-link" onclick="navigateTo('login.html')">Ingreso</span>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link txt-plomo" href="registro.html">Registrarse</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link txt-plomo" href="agendar.html">Agendar</a>
-                            </li>                                
-                        </ul> <!-- fin menus -->
-        
-                        <form class="d-flex" role="search"> <!-- inicio sector de busqueda -->
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-secondary" type="submit">Search</button>
+                        </ul>
+                        <form id="searchForm" class="d-flex" role="search">
+                            <!-- inicio sector de busqueda -->
+                            <input id="searchInput" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+                            <script defer src="busqueda.js"></script>
                         </form> <!-- fin sector de busqueda -->
                     </div>
                 </div>
-            </nav> <!-- ifin barra superior-->
+            </nav>
+            <script defer src="main.js"></script>
+        </header>
 
+        <main>
             <div class="titulo-seccion-pag pt-5 txt-blanco">
                 <div class="container text-center text-capitalize">
                     <div class="row">
@@ -93,7 +81,7 @@
                 </div>
             </div>
             
-            <div class="formularios py-5 txt-amarillo">
+            <div class="formularios py-5 txt-plomo">
                 <div class="container">
                     <div class="row justify-content-between">
                         <div class="col-lg-2 col-md-2">
@@ -124,7 +112,7 @@
                                         <label for="correo" class="form-label titulos-form">Correo electrónico</label>
                                         <!-- para ingresar el correo-->
                                         <input type="email" class="form-control" id="correo" name="correo" aria-describedby="emailHelp">
-                                        <div id="emailHelp" class="form-text txt-amarillo">Nos contactaremos directamente en este correo
+                                        <div id="emailHelp" class="form-text txt-plomo">Nos contactaremos directamente en este correo
                                         </div>
                                     </div>
                                 </div>
@@ -136,7 +124,7 @@
                                 <div class="col-lg-6 col-md-6 pt-2">
                                     <div class="mb-3 form-check">
                                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label link-mora" name="ok" for="exampleCheck1">Acepto los   <a class="text-decoration-none txt-amarillo2" href="#">términos y condiciones</a></label>
+                                        <label class="form-check-label link-mora" name="ok" for="exampleCheck1"><a class="text-decoration-none txt-plomo" href="terminoYCondiciones.html">Acepto los términos y condiciones</a></label>
                                     </div>
                                 </div>
                                 <button type="submit" class="btn btn-primary bg-morado">Enviar</button>
@@ -147,46 +135,38 @@
                     </div>
                 </div>
             </div>
+        </main>
 
-            <!--inicio barra inferiro-->
-            <div class="downbar bg-negro py-1">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 t700">
-                            <ul class="nav justify-content-center"> <!--centrer, para centrar los 3 iconos-->
-                                <!-- 1. se agrega "fa " para que carge los iconos-->
-                                <!-- 2. el px-2 es para que no estan juntos-->
-                                <li class="txt-blanco">Visitanos/Siguenos</li>
-                                <li><a class="text-decoration-none txt-blanco" href="https://www.facebook.com/?locale=es_LA"><i class="fa fa-brands fa-facebook px-2"></i></a></li>
-                                <li><a class="text-decoration-none txt-blanco" href="https://www.instagram.com/"><i class="fa fa-brands fa-instagram px-2"></i></a></li>
-                                <li><a class="text-decoration-none txt-blanco" href="https://twitter.com/?lang=es"><i class="fa fa-brands fa-twitter px-2"></i></a></li>
-                            </ul><!-- fin lista-->
-                        </div>
-                    </div><!-- fin row-->
-                </div><!-- fin container-->
-            </div><!-- fin barra superior -->
-        </header>
-        <!--main></main-->
-        <footer class="footer text-center txt-amarillo"><!-- Pie de la pagina -->
+        <footer class="footer text-center">
             <div class="copyright">
                 <div class="container">
                     <hr>
                     <div class="row">
-                        <div class="col-lg-12 col-md-12">
-                            <p><b><a href="index.html"> <img src="img\logo.png" width="50"></a> | 2024 | Mecanica | Taller mecanico Rayo Makween |   <a class="text-decoration-none txt-amarillo" href="login.html">Ingreso personal</a></b></p>
+                        <div class="col-lg-6 col-md-6 txt-negro">
+                            <p><b><a href="index.html"> <img src="img\logo1.png" width="50"></a> | 2024 | Mecanica | Taller mecanico Rayo Makween |</b></p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 t700">
+                            <ul class="nav justify-content-center"> <!--centrer, para centrar los 3 iconos-->
+                                <!-- 1. se agrega "fa " para que carge los iconos-->
+                                <!-- 2. el px-2 es para que no estan juntos-->
+                                <li class="txt-plomo ">Visitanos/Siguenos</li>
+                                <li><a class="text-decoration-none txt-plomo" href="https://www.facebook.com/?locale=es_LA"><i class="fa fa-brands fa-facebook px-2"></i></a></li>
+                                <li><a class="text-decoration-none txt-plomo" href="https://www.instagram.com/"><i class="fa fa-brands fa-instagram px-2"></i></a></li>
+                                <li><a class="text-decoration-none txt-plomo" href="https://twitter.com/?lang=es"><i class="fa fa-brands fa-twitter px-2"></i></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-        </footer><!-- Fin Pie de la pagina -->
-        <!-- Bootstrap JavaScript Libraries -->
+            </div>
+        </footer>
+
+        <!-- jquery-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"
-        ></script>
-        
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"
-        ></script>
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     </body>
 </html>
